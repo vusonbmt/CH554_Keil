@@ -108,7 +108,7 @@ void Enp1IntIn()
 }
 /*******************************************************************************
  * Function Name  : Enp2IntIn()
- * Description    : USB设备模式端点2的中断上传
+ * Description    : Interrupt upload for USB device mode endpoint 2
  * Input          : None
  * Output         : None
  * Return         : None
@@ -451,7 +451,7 @@ void HIDValueHandle()
         }
         Enp1IntIn();
         break;
-    case 'P': // P键
+    case 'P': // P key
         FLAG = 0;
         HIDKey[2] = 0x13;
         Enp1IntIn();
@@ -462,7 +462,7 @@ void HIDValueHandle()
         }
         Enp1IntIn();
         break;
-    case 'Q': // Num Lock键
+    case 'Q': // Num Lock key
         FLAG = 0;
         HIDKey[2] = 0x53;
         Enp1IntIn();
